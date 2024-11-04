@@ -13,9 +13,9 @@ public class User {
     private String username;
     private String password;
     private String emailId;
+    /*role - USER and ADMIN*/
     private String role;
-    private Date created_at;
-    // Getters and Setters
+    private Date createdDate;
 
     public String getUserId() {
         return userId;
@@ -57,11 +57,11 @@ public class User {
         this.role = role;
     }
 
-    public Date getCreated_at() {
-        return created_at;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreated_at(Date created_at) {
-        this.created_at = created_at;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 }

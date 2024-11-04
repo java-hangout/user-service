@@ -21,6 +21,7 @@ public class UserController {
     public User getUser(@PathVariable String username) {
         return userService.getUser(username);
     }
+
     @PutMapping("/{id}")
     public User updateTicket(@PathVariable String id, @RequestBody User user) {
         user.setUserId(id);
